@@ -8,51 +8,83 @@
   <title>Home</title>
   <style>
     * {
-      color: white;
-      padding: 0px;
-      margin: 0px;
-      background: url("img.jpg");
-      background-size: 1500px auto;
+      /* padding: 0px;
+      margin: 0px; */
+      /* background: url("img.jpg");
+      background-size: 1500px auto; */
     }
 
     .left {
       border: 2px solid blue;
       display: block;
-      width: 80px;
+      width: 150px;
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 15px;
+      left: 15px;
+      background-color: aquamarine;
+      border: 5px rgb(255, 255, 255);
+      border-style: dotted;
+      border-radius: 10px;
     }
 
     .left img {
       display: block;
-      filter: invert();
       width: 50px;
-      margin: auto;
+      height: 50px;
+      object-fit: cover;
+      margin: 10px auto;
+      border-radius: 25px;
     }
 
     .left p {
+      margin: 10px 0px;
+      font-size: 20px;
+      color: white;
       text-align: center;
     }
 
     .mid {
-      border: 2px solid white;
       display: block;
-      width: 40%;
-      height: 40px;
-      margin: 10px auto;
+      width: 35%;
+      margin: 15px auto;
     }
-    .navbar{
+
+    .navbar {
+      background-color: aquamarine;
+      border-radius: 40px;
+      box-sizing: border-box;
+
     }
-    .navbar li{
+
+    .navbar li {
+      border: 2px rgb(0, 101, 22) solid;
+      border-radius: 20px;
       display: inline-block;
-      
+      padding: 2px;
+      margin: 10px 7px;
     }
-    .navbar li a{
+
+    .navbar li:hover {
+      background-color: rgb(0, 62, 8);
+      border: 2px rgb(0, 101, 22) solid;
+      display: inline-block;
+      padding: 2px;
+      margin: 10px 7px;
+
+    }
+
+    .navbar li a {
+      color: darkgreen;
       text-decoration: none;
-      background-color: transparent;
       padding: 10px;
-      margin: 8px auto;
+      margin: 8px;
+    }
+
+    .navbar li a:hover {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px;
     }
 
     .right {
@@ -62,6 +94,30 @@
       position: absolute;
       top: 10px;
       right: 10px;
+    }
+
+    .container {
+      margin: 70px auto;
+      border: 2px dotted dodgerblue;
+      border-radius: 20px;
+      display: block;
+      width: 400px;
+      /* background-color: aquamarine; */
+    }
+
+    .container h3 {
+      margin: 5px 120px;
+    }
+
+    .form-group {
+      margin: 5px 100px;
+      padding: 5px;
+    }
+
+    .btn {
+      margin: 5px 150px;
+      border: 1px solid black;
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -79,9 +135,26 @@
       <li><a href="">Supplement</a> </li>
       <li><a href="">Branches</a> </li>
     </ul>
-
-
   </div>
+  <div class="container">
+    <h3>Join the Best Gym</h3>
+    <form action="noaction.php">
+      <div class="form-group">
+        <input type="text" name="" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <input type="number" name="" placeholder="Enter your age">
+      </div>
+      <div class="form-group">
+        <input type="email" name="" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <input type="number" name="" placeholder="Enter your number">
+      </div>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
+
   <div class="right">i am right</div>
 </body>
 
